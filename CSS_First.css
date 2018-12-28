@@ -1,0 +1,431 @@
+body,html{
+    padding: 0;
+	margin: 0;
+	font-family: Microsoft JhengHei;
+
+  }
+
+
+
+body{
+	background-color: #354751;
+	color: rgb(199, 199, 199);
+}
+
+/* -------------------------main------------------- */
+
+.main{
+	height: 550px;
+	width: 100%;
+	position: relative;
+}
+.main_h1{
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 4em;
+	color: #354751;
+	/* background-color: #8d8b8bb6; */
+	font-family: 'Kalam', cursive;
+
+
+}
+@media screen and (min-width: 769px) and (max-width: 1280px){
+	.main{
+		height: 400px;
+		
+	}
+	.main_h1{
+		font-size: 2.5em;
+	}
+
+}
+@media screen and (min-width: 640px) and (max-width: 768px){
+	.main{
+		height: 350px;
+		
+	}
+	.main_h1{
+		font-size: 2em;
+	}
+
+}
+
+@media screen and (min-width: 375px)and (max-width: 640px){
+	.main{
+		height: 300px;
+		
+	}
+	.main_h1{
+		font-size: 1.5em;
+	}
+
+}
+@media screen and (max-width: 375px){
+	.main{
+		height: 300px;
+		
+	}
+	.main_h1{
+		font-size:1.3em;
+	}
+
+}
+
+
+
+/* -------------------------About Us------------------- */
+
+.about_us{
+	width: 100%;
+	height: 100%;
+	
+	margin: 50px auto;
+	/* background-color: rgba(153, 100, 36, 0.589); */
+}
+.about_h{
+	width: 80%;
+	margin: 0 auto;
+}
+.about_p{
+	font-size: 1.3em;
+	line-height: 1.8em;
+	letter-spacing: 3px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 0px;
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+
+@media screen and (max-width: 640px){
+	.about_p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		letter-spacing: 2px;
+		
+	}
+	.about_h{
+		font-size: 1.5em;
+	}
+	.about_us{
+	margin: 25px auto;	
+	}
+	
+
+}
+
+/* -------------------Content------FOOD------------------- */
+
+
+
+.pasta{
+	
+	flex-direction:row;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	margin-top: 10px;
+
+
+}
+.pasta_L{
+	width: 570px;
+	height: 400px;
+	display: flex;
+	align-items:center;
+	font-size: 1.3em;
+	line-height: 1.8em;
+	letter-spacing: 0.5rem;
+	padding: 0 	15px;
+	text-align: justify;
+	text-justify:inter-ideograph;
+
+}
+.pasta_R{
+	width: 50%;
+	height: 400px;
+	background: url(images/首頁圖/FOOD區/pasta_1.jpg) no-repeat center center; 
+	background-size: cover;
+	/* background-position: 50% 50%; */
+    background-size: 100% auto;
+
+}
+
+
+
+
+
+
+.hamburger{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	
+}
+.hamburger_R{
+	width: 570px;
+	height: 400px;
+	display: flex;
+	align-items:center;
+	
+	font-size: 1.3em;
+	line-height: 1.8em;
+	letter-spacing: 0.5em;
+	padding: 0 	15px;
+	
+	text-justify:inter-ideograph;
+}
+.hamburger_L{
+	width: 50%;
+	height: 400px;
+	background: url(images/首頁圖/FOOD區/hamburger_1.jpg) no-repeat center center; 
+	background-size: cover;
+	background-size: 100% auto;
+
+
+}
+
+
+
+
+.pizza{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	
+
+
+}
+.pizza_L{
+	width: 570px;
+	height: 400px;
+	display: flex;
+	align-items:center;
+	
+	font-size: 1.3em;
+	line-height: 1.8em;
+	letter-spacing: 0.5em;
+	padding: 0 	15px;
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+.pizza_R{
+	width: 50%;
+	height: 400px;
+	background: url(images/首頁圖/FOOD區/pizza_2.jpg) no-repeat center center; 
+	background-size: cover;
+    background-size: 100% auto;
+
+}
+
+.cake{
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.cake_L{
+	width: 50%;
+	height: 400px;
+	background: url(images/首頁圖/FOOD區/cake_9.jpg) no-repeat center center; 
+	background-size: cover;
+	background-size: 100% auto;
+
+}
+.cake_R{
+	width: 570px;
+	height: 400px;
+	display: flex;
+	align-items:center;
+	
+	font-size: 1.3em;
+	line-height: 1.8em;
+	letter-spacing: 0.5em;
+	padding: 0 	15px;
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+
+
+
+@media screen and (max-width: 768px){
+	
+	.pasta, .hamburger,.pizza,.cake{
+		width: 100%;
+		height: 550px;
+		flex-wrap: wrap;
+	}
+	
+	
+}
+@media screen and (max-width: 768px){
+	
+	 .hamburger_L,.cake_L{
+		order: 1;
+
+	}
+	.hamburger_R,.cake_R{
+		order: -1;
+	}
+	.pasta_L,.hamburger_R,.pizza_L,.cake_R{
+		height: 100px;
+		margin: 15px;
+		padding: 20px;
+		font-size: 1.1em;
+		line-height: 1.5em;
+		
+	}
+	.pasta_R,.hamburger_L,.pizza_R,.cake_L{
+		width: 80%;
+		height: 300px;
+		margin: 0;
+	}
+	
+	
+}
+
+/* -------------------------friendly_pet------------------- */
+
+
+.friendly_pet{
+	height: 100px;
+	background-color: #b8b7b727;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	margin:20px 0px;
+	position: relative;
+	
+}
+.FP_img1 img{
+	width: 50px;
+	height: 50px;
+	animation: ani1 1s infinite;
+	margin: 0 20px;
+}
+.FP_P{
+	font-size: 2em;
+	margin: 0 20px;
+}
+.FP_img2 img{
+	width: 50px;
+	height: 50px;
+	animation: ani1 1s infinite;
+	margin: 0 20px;
+}
+
+@media screen and (max-width: 768px){
+	
+	.FP_P{
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: 767px) and (max-width: 640px){
+	.FP_P{
+		font-size: 1.5em;
+	}
+
+}
+
+@keyframes ani1 {
+	0% {
+	  transform: skewX(5deg);
+	  transform-origin: 0% 100%;
+	  
+	}
+	50% {
+	  transform: skewX(-5deg);
+	  transform-origin: 0% 100%;
+	  
+	}
+	100% {
+	  transform: skewX(5deg);
+	  transform-origin: 0% 100%;
+	  
+	}
+  }
+/* ------------------------- SNS------------------- */
+.SNS{
+	display: flex;
+	justify-content:center;
+	margin: 20px ;
+}
+.SNS_img{
+	width: 50px; 
+    height: 50px;
+	margin:15px 25px;
+	
+}
+
+@keyframes rotate_SNS{
+	0%{
+		transform: rotate(0);
+	}
+	50%{
+		transform: rotate(-60deg);
+	}
+	100%{
+		transform: rotate(0);
+	}
+}
+  .SNS_img:hover{
+	animation: rotate_SNS .5s;
+  }
+
+  @media screen and (max-width: 768px)
+    {
+    .SNS{
+		display: flex;
+        justify-content:center;
+        flex-wrap:wrap;
+	 }
+	 .SNS_img{
+		 width: 30px;
+		 height: 30px;
+		 margin:10px 10px;
+	 }
+     
+}
+
+footer{
+	text-align: center;
+	font-size: 0.8em;
+	letter-spacing: 0.5em;
+}
+@media screen and (max-width: 768px){
+	footer{
+		font-size: 0.4em;
+		letter-spacing: 0.3em;
+	}
+	
+}
+
+/* ------------------TO TOP------------------ */
+
+#to_top{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	cursor: pointer;
+
+}
+#to_top img{
+width: 40px;
+height: 40px;
+}
+@media screen and (max-width: 640px){
+#to_top img{
+	width: 30px;
+	height: 30px;
+
+}
+
+}

@@ -1,0 +1,304 @@
+
+
+
+/* -------------------------haeder------------------- */
+
+
+header{
+    
+    /* text-align: center; */
+    height: 80px;
+    width: 100%;
+    background-color: #EED069;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    
+}
+.PAGE_TITLE{
+	display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.LOGO{
+    width: 60px;
+    height:60px;
+    margin: 10px auto;
+    padding: 0;
+}
+.headerH1 {
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    padding: 0;
+    color: #724529;
+    
+}
+.headerH1:hover{
+	text-decoration: none;
+	color: #efefef;
+}
+
+/* -------------------------nav------------------- */
+
+
+
+#menu {
+	/* 選單大小 */
+	width:100%;
+    height:50px;
+    display: flex;
+    justify-content:center;
+	align-items: center;
+	box-shadow:3px 5px #27272728;
+	z-index: 99;
+    
+}
+
+
+#menu ul {
+	/* 取消ul樣式符號 */
+	list-style-type:none;
+	/* 重設ul邊界與留白為零 */
+	margin:0 ;
+	padding:0;
+	/* 內有浮動元件時，需設overflow才會自動調整大小 */
+    overflow:auto;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    
+    
+}
+
+
+#menu ul li {
+	/* 利用float讓第一層li水平排列 */
+	float:left;
+    z-index: 99;
+    
+}
+
+#menu ul li a {
+	/* 將a改為區塊元件，以便指定寬高 */
+	display:block;
+	/* 這邊也要設float，否則IE6會以100%寬度顯示 */
+	float:left;
+	/* 固定高度 */
+	height:50px;
+	width: 150px;
+    text-align: center;
+    
+    
+}
+#menu ul li ul {
+	/* 讓第二層ul跳脫文件流以利定位 */
+	position:absolute;
+	/* 固定寬度 */
+	width:150px;
+	/* 避免出現捲軸 */
+	overflow:visible;
+	/* 讓ul與母階層li相同位置 */
+	clear:left;
+	margin-top: 50px;
+	margin-right: 0;
+	margin-bottom: 0;
+    margin-left: 0;
+	display: block;
+	
+}
+
+#menu ul li ul li {
+	/* 覆寫繼承自第一層的浮動設定 */
+	float:none;
+	text-align: center;
+	
+}
+#menu ul li ul li a {
+	/* 覆寫繼承自第一層的浮動設定 */
+	float:none;
+	width: 100%;/* 註：display、height、padding繼承第一層的設定 */
+}
+
+
+/* ---------- 隱藏與顯示階層 ---------- */
+#menu ul li ul {
+	/* 預先隱藏第二層 */
+	visibility:hidden;
+}
+#menu ul li:hover ul {
+	/* 觸動第一層時，顯示第二層 */
+	visibility:visible;
+}
+#menu ul li:hover ul li ul {
+	/* 顯示第二層時，隱藏第三層，避免同時彈出 */
+	visibility:hidden;
+}
+#menu ul li ul li:hover ul {
+	/* 觸動第二層時，顯示第三層 */
+	visibility:visible;
+}
+
+
+
+/* 預設字體 */
+#menu {
+	font-size:18px;
+	font-family: Microsoft JhengHei;
+}
+/* 第一層ul背景色彩與邊框 */
+#menu ul {
+	background-color: #67696E;
+	;
+}
+/* 第一層a字型 */
+#menu ul li a {
+	color:#FFF;
+	text-decoration:none;
+    line-height: 50px;
+    text-align: center;
+}
+/*第二層ul背景色彩與邊框  */
+#menu ul li ul {
+	background:#efefef;
+}
+/* 第二層a字型 */
+#menu ul li ul li a {
+	font-size:18px;
+	color:#333333;
+	text-decoration:none;
+}
+/* 觸動第一層li時，改變背景色 */
+#menu ul li:hover, #menu ul li a:hover {
+	background:#bebdbd;
+}
+#menu ul li:hover a {
+	color:#0e0d0d;
+}
+/* 觸動第二層以上li時改變背景色 */
+#menu ul li ul li:hover, #menu ul li ul li a:hover {
+	background:#bebdbd;
+}
+
+
+/* menu-toggle */
+/* .menu-toggle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	padding: 8px;
+	padding-top: 16px;
+	transition: 0.4s ease-in-out;
+	cursor: pointer;
+	/* box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); 
+} */
+
+/* @media screen and (min-width: 768px){
+	.menu-toggle{
+		display: none;
+	}
+	
+
+}*/
+@media screen and (max-width: 767px){
+	header{
+		height: 60px;
+	}
+	#menu{
+		display: none;
+	}
+	.LOGO{
+		width: 60px;
+		height: 60px;
+	}
+	.headerH1{
+		display: none;
+		
+		
+	}
+
+}
+
+
+
+
+.transition{
+    transition: 0.4s;
+  }
+.menu2{
+    position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+	padding: 8px;
+	padding-top: 7px;
+	transition: 0.4s ease-in-out;
+	cursor: pointer;
+	z-index: 99;
+  }
+  .menu2.active{
+    background: #EED069;
+  }
+  .menu2 ul{
+    position: absolute;
+    right:0;
+    top:60px;
+	background:#EED069;
+	border: 1px solid #EED069;
+    width:120px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .menu2.active ul{
+    opacity: 1;
+    max-height: 400px;
+  }
+  .menu2 ul li a{
+    display: block;
+	padding:10px 12px;
+	text-decoration: none;
+	font-weight: 900;
+    
+  }
+  .menu2 ul li a:hover{
+	background: #354751;
+	color: #efefef;
+  }
+  ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .bar{
+      width: 36px;
+      height: 6px;
+      background: #666;
+      margin: 6px 0;
+      border-radius: 2px;
+  }
+  .active .bar1{
+      -webkit-transform: rotate(-45deg) translate(-9px, 7px) ;
+      transform: rotate(-45deg) translate(-9px, 7px) ;
+  }
+
+  .active .bar2{opacity: 0;}
+
+  .active .bar3{
+      -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
+      transform: rotate(45deg) translate(-9px, -8px) ;
+  }
+	
+
+  @media screen and (min-width: 768px){
+	.menu2{
+		display: none;
+	}
+}

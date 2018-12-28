@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>確認訂位</title>
+
+    <link rel="Shortcut Icon" type="image/x-icon" href="images/首頁圖/意享LOGO.png" />
+
+    
+    <style>
+    body,html{
+    padding: 0;
+	margin: 0;
+    font-family: Microsoft JhengHei,'Kalam', cursive;
+    
+
+    }
+    body{
+        background-color: #354751;
+        color: rgb(199, 199, 199);
+    }
+    .bigpic{
+        width: 100%;
+    }
+    .Thanks{
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    @media screen and (max-width: 640px){
+        .Thanks{
+        font-size: 2rem;
+     }
+ }
+
+ .return{
+    text-align: center;
+    font-size: 2rem;
+ }
+ @media screen and (max-width: 640px){
+        .return{
+        font-size: 1.5rem;
+     }
+ }
+
+
+
+ .PIC{
+   display: block;
+   margin: auto;
+ }
+
+
+ /* .wrapper {
+  border-bottom: solid 2px #757575;
+  height: 100px;
+  
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.wrapper .rainbow {
+  animation: spin 1s ease-in-out infinite;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+}
+.wrapper .rainbow:after {
+  background-color: #354751;
+  bottom: 100px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wrapper .rainbow .arc {
+  border: solid 8px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wrapper .rainbow .arc.red {
+  border-color: red;
+}
+.wrapper .rainbow .arc.orange {
+  border-color: orange;
+  margin: 8px;
+}
+.wrapper .rainbow .arc.yellow {
+  border-color: yellow;
+  margin: 16px;
+}
+.wrapper .rainbow .arc.green {
+  border-color: yellowgreen;
+  margin: 24px;
+}
+.wrapper .rainbow .arc.blue {
+  border-color: skyblue;
+  margin: 32px;
+}
+.wrapper .rainbow .arc.violet {
+  border-color: violet;
+  margin: 40px;
+}
+.wrapper .rainbow .arc.purple {
+  border-color: mediumpurple;
+  margin: 48px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+    
+    </style>
+
+
+
+</head>
+<body>
+    <img src="images/可愛橫幅.jpg" alt="" class="bigpic">
+    <h1 class="Thanks">感謝您的訂位，期待您的蒞臨</h1>
+
+    <h3 class="return">我們將在 <span id="CC">8</span> 秒後自動返回前頁</h3>
+
+    <img src="images/法鬥放炮.gif" alt="" class="PIC">
+    
+    <!-- <div class="wrapper">
+            <div class="rainbow">
+              <div class="arc red"></div>
+              <div class="arc orange"></div>
+              <div class="arc yellow"></div>
+              <div class="arc green"></div>
+              <div class="arc blue"></div>
+              <div class="arc violet"></div>
+              <div class="arc purple"></div>
+            </div>
+    </div> -->
+   
+    
+
+    
+    
+    
+
+    <script>
+      var num1 = 8;
+      var t1 = setInterval(function(){
+        num1--;
+      var span1 = document.getElementById("CC");
+      span1.innerText = num1;
+        if(num1==8){
+          clearInterval(t1);
+          }       
+      }, 1000);
+
+
+
+        window.onload = function(){
+        setTimeout("history.back()", 8000);
+            }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+body,html{
+    padding: 0;
+	margin: 0;
+    font-family: Microsoft JhengHei,'Kalam', cursive;
+    
+
+  }
+  body{
+	background-color: #354751;
+	color: rgb(199, 199, 199);
+}
+
+
+
+
+
+
+/* ------------------------MENU------------------------------- */
+ .FOOD_T{
+     font-size: 3rem;
+     text-align: center;
+ }
+
+ @media screen and (max-width: 640px){
+     .FOOD_T{
+        font-size: 2rem;
+     }
+ }
+ .pasta,.pizza,.hamburger,.dessert{
+    width: 100%;
+    height:750px;
+ }
+
+ @media screen and (max-width: 640px){
+    .pasta,.pizza,.hamburger,.dessert{
+        width: 100%;
+        height:650px;
+        
+    
+    }
+    
+ }
+ @media (min-width: 767px) and (max-width: 640px){
+	.pasta,.pizza,.hamburger,.dessert{
+        width: 100%;
+        height:700px;
+    
+    }
+}
+ 
+
+
+ .pasta_title,.pizza_title,.hamburger_title,.dessert_title{
+    font-size: 2rem;
+    text-align: center;
+    
+ }
+
+ @media screen and (max-width: 640px){
+    .pasta_title,.pizza_title,.hamburger_title,.dessert_title{
+       font-size: 1.5rem;
+    }
+}
+
+
+
+
+ .pasta_img{
+     width: 100%;
+     height: 300px;
+     background: url(images/美味專區圖/義大利麵-1.jpg)no-repeat center center;
+ }
+
+ .pizza_img{
+    width: 100%;
+    height: 300px;
+    background: url(images/美味專區圖/pizza_1.jpg)no-repeat center center;
+ }
+ .hamburger_img{
+    width: 100%;
+    height: 300px;
+    background: url(images/美味專區圖/漢堡-2.jpg)no-repeat center center;
+ }
+ .dessert_img{
+    width: 100%;
+    height: 300px;
+    background: url(images/美味專區圖/cake_9.jpg)no-repeat center center;
+ }
+
+
+ @media screen and (max-width: 768px){
+    .pasta_img,.pizza_img,.hamburger_img,.dessert_img{
+        width: 100%;
+        height: 250px;
+    }
+ }
+
+
+
+ .pasta_items,.pizza_items,.hamburger_items{
+    width: 100%;
+    height:600px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content:center; 
+    
+ }
+
+ @media screen and (max-width: 768px){
+    .pasta_items,.pizza_items,.hamburger_items{
+        height:335px;
+        justify-content:flex-start;
+        margin: 0px;
+        padding: 0px;
+    }
+ }
+
+
+ .dessert_items{
+    width: 100%;
+    height:480px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content:center; 
+    
+ }
+ @media screen and (max-width: 768px){
+    .dessert_items{
+        height:335px;
+        display: flex;
+        justify-content:flex-start;
+        margin: 0;
+        padding: 0;
+    }
+ }
+
+
+
+ .pasta_item,.pizza_item,.hamburger_item,.dessert_item {
+    
+    margin: 20px auto;
+ }
+
+ @media screen and (max-width: 768px){
+    .pasta_item,.pizza_item,.hamburger_item,.dessert_item {
+        height:80px;
+        justify-content:flex-start;
+        margin: 20px;
+        padding: 0;
+        
+     }
+     pizza_item,.dessert_item{
+        margin: 30px;
+     }
+ }
+
+
+ .pasta_item li,.pizza_item li,.hamburger_item li,.dessert_item li{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    list-style: none;
+ }
+ @media screen and (max-width: 678px){
+    .pasta_item li,.pizza_item li,.hamburger_item li,.dessert_item li{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0;
+        margin: 0;
+    
+    }
+    
+ }
+ @media (min-width: 767px) and (max-width: 677px){
+	.pasta_item li,.pizza_item li,.hamburger_item li,.dessert_item li{
+        font-size:2.2rem;
+        line-height: 2.5rem;
+        padding: 0;
+        margin: 0;
+    
+    }
+}
+
+.pasta_item li img,.pizza_item li img,.hamburger_item li img,.dessert_item li img{
+    width: 24px;
+    height: 24px;
+}
+@media screen and (max-width: 640px){
+    .pasta_item li img,.pizza_item li img,.hamburger_item li img,.dessert_item li img{
+        width: 16px;
+        height: 16px;
+    
+    }
+    
+ }
+
+
+
+/* ------------------TO TOP------------------ */
+
+#to_top{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+
+}
+#to_top img{
+    width: 40px;
+    height: 40px;
+}
+@media screen and (max-width: 640px){
+    #to_top img{
+        width: 30px;
+        height: 30px;
+    
+    }
+    
+ }
+/* ------------------footer------------------ */
+
+
+footer{
+	text-align: center;
+	font-size: 0.8em;
+	letter-spacing: 0.5em;
+}
+@media screen and (max-width: 768px){
+	footer{
+		font-size: 0.4em;
+		letter-spacing: 0.3em;
+	}
+	
+}

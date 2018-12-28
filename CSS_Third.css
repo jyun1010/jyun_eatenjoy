@@ -1,0 +1,191 @@
+body,html{
+    padding: 0;
+	margin: 0;
+    font-family: Microsoft JhengHei,'Kalam', cursive;
+    
+
+  }
+  body{
+	background-color: #354751;
+	color: rgb(199, 199, 199);
+}
+
+/* -----------------------INFO_T--------------------- */
+
+.INFO_T{
+    /* margin: 20px 0; */
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .INFO_T{
+       font-size: 2rem;
+    }
+}
+
+
+/* -----------------------INFO--------------------- */
+
+.info{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 25px;
+}
+@media screen and (max-width: 768px){
+    .info{
+       font-size: 1.8rem;
+    }
+}
+
+.box{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Xindain_R,.Linkou_L{
+    border: 1px dotted #ffff80;
+    width: 580px;
+    height: 450px;
+    font-size: 1.5rem;
+    line-height: 50px;
+    padding:0 10px;
+   
+}
+.Xindain_R li,.Linkou_L li{
+    list-style: none;
+}
+
+
+.Xindain_L,.Xindain_R,.Linkou_L,.Linkou_R{
+    margin: 10px;
+}
+.Xindain_SNS img,.Linkou_SNS img{
+    width: 35px;
+    height: 35px;
+    margin: 10px 40px;
+}
+.Xindain_SNS img:hover,.Linkou_SNS img:hover{
+    width: 40px;
+    height: 40px;
+    margin: 0 45px;
+}
+
+
+.Linkou_L li img,.Xindain_R li img{
+    animation: ani1 1s infinite;
+}
+@keyframes ani1 {
+	0% {
+	  transform: skewX(5deg);
+	  transform-origin: 0% 100%;
+	  
+	}
+	50% {
+	  transform: skewX(-5deg);
+	  transform-origin: 0% 100%;
+	  
+	}
+	100% {
+	  transform: skewX(5deg);
+	  transform-origin: 0% 100%;
+	  
+	}
+  }
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1260px){
+    .box{
+        height: 100%;
+    }
+    
+    
+    .Linkou_L,.Xindain_R {
+		order: -1;
+		
+    }
+    .Linkou_R,.Xindain_L{
+        order: 1;
+    }
+	
+
+}
+@media screen and (max-width: 768px){
+    .box{
+        height: 100%;
+    }
+    
+    
+    .Linkou_L,.Xindain_R {
+		order: -1;
+		
+    }
+    .Linkou_R,.Xindain_L{
+        order: 1;
+    }
+    
+    .Linkou_L img,.Xindain_R img{
+        width: 16px;
+        height: 16px;
+        margin: 0px 2px;
+    }
+    .Xindain_SNS img,.Linkou_SNS img{
+        width: 25px;
+        height: 25px;
+        margin: 10px 30px;
+    }
+
+    .Xindain_SNS img:hover,.Linkou_SNS img:hover{
+        width: 30px;
+        height: 30px;
+        margin: 0 30px;
+    }
+
+    .Xindain_R,.Linkou_L{
+        
+        width: 100%;
+        height: 80%;
+        font-size: 1.1rem;
+        line-height: 30px;
+        letter-spacing: 2px;
+       
+    }
+    .Xindain_L,.Linkou_R{
+        width: 100%;
+        height: 80%;
+    }
+    .Xindain_L,.Linkou_R {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    } 
+    .Xindain_L iframe,.Linkou_R iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+
+/* -----------------------footer--------------------- */
+footer{
+	text-align: center;
+	font-size: 0.8em;
+	letter-spacing: 0.5em;
+}
+@media screen and (max-width: 768px){
+	footer{
+		font-size: 0.4em;
+		letter-spacing: 0.3em;
+	}
+	
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>線上訂位</title>
+
+    <link rel="Shortcut Icon" type="image/x-icon" href="images/首頁圖/意享LOGO.png" />
+
+
+    <link rel="stylesheet" href="header+nav.css">
+    <link rel="stylesheet" href="CSS_4th.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+
+
+</head>
+<body>
+        <header>
+                <div class="PAGE_TITLE">
+                    <a href="首頁.html"> <img class="LOGO" src="images/首頁圖/意享LOGO.png" alt=""></a>
+                    <a href="首頁.html" class="headerH1"> Eat Enjoy</a>
+                </div>
+                
+                <div class="menu2 transition" >
+                    <div class="bar bar1 transition"></div>
+                    <div class="bar bar2 transition"></div>
+                    <div class="bar bar3 transition"></div>
+                    <ul class="transition">
+                      <li><a href="首頁.html" class="transition">首頁</a></li>
+                      <li><a href="美味專區.html" class="transition">美味專區</a></li>
+                      <li><a href="店家資訊.html" class="transition">店家資訊</a></li>
+                      <li><a href="線上訂位.html" class="transition">線上訂位</a></li>
+                </ul>
+                
+                 
+        
+        
+        
+        
+            </header>
+    <nav >
+            <div id="menu">
+                    <ul >
+                        <li> <a href="首頁.html">首頁</a></li>
+                        <li> <a href="美味專區.html">美味專區</a>
+                            <ul>
+                                <li><a href="美味專區.html#pasta">義大利麵</a></li>
+                                <li><a href="美味專區.html#pizza">PIZZA</a></li>
+                                <li><a href="美味專區.html#hamburger">美式漢堡</a></li>
+                                <li><a href="美味專區.html#dessert">甜點</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="店家資訊.html">店家資訊</a></li>
+                        <li> <a href="線上訂位.html">線上訂位</a></li>
+                      
+                    </ul>
+            </div>
+            
+        </nav>
+            
+    <div><h1 class="Booking">線上訂位</h1></div>
+
+    <div class="TABLE wow bounceInUp" >
+       <div > 您的姓名: <input type="text"class="name" placeholder="請輸入姓名"></div>
+       <div > 聯絡電話: <input name="text" type="text"class="tel"  minlength="8" maxlength="10" placeholder="請輸入電話"></div>
+       <div > 選擇分店:
+            <select name="Location" id="" class="store">
+                <option value="Xindain">新店店</option>
+                <option value="Linkou">林口店</option>
+            </select>
+        </div>
+        <div > 用餐人數: <input type="number"class="people"></div>
+        <div > 用餐日期: <input type="date" name="user_date"class="eat_date"></div>
+        <div > 用餐時段:  
+            <select name="eat_time" id=""class="eat_time">
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+            </select>
+        </div>
+            <input type="submit" class="submit submit1" value="送出" />
+            <input type="submit" class="submit submit2" value="清除" />
+    </div>
+
+
+    <footer>
+            <p>
+                231新北市新店區北新路一段88巷9號<br>
+                244新北市林口區文化三路一段390-1號<br>
+                © 2018 by Eat Enjoy.
+            </p>
+             
+    </footer>
+
+
+  
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+       
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(".menu2").click(function(){
+          $(this).toggleClass('active');
+        });
+
+
+        $(".submit1").click(function(){
+             
+	    answer = confirm("你確定資料都正確了嗎？");
+	    if (answer)
+		    location.href="確認訂位.html";
+    
+        })
+
+
+         $(".submit2").click(function()
+            {
+            if(confirm("確認要刪除內容重新填寫??"))
+            window.history.go(0);
+            else
+            alert("繼續填寫吧~");
+            })
+        
+
+
+
+
+
+
+
+         var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+
+    
+    </script>
+
+</body>
+</html>

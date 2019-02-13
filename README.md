@@ -7,4 +7,4 @@ Let's Eat Enjoy
 
 
 
-使用技術:CSS、HTML、javascript、RWD
+使用技術:CSS、HTML、javascript、RWD、套用jquery plugin

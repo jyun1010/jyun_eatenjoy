@@ -183,28 +183,6 @@ header{
 }
 
 
-/* menu-toggle */
-/* .menu-toggle{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 45px;
-	height: 45px;
-	display: inline-block;
-	padding: 8px;
-	padding-top: 16px;
-	transition: 0.4s ease-in-out;
-	cursor: pointer;
-	/* box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); 
-} */
-
-/* @media screen and (min-width: 768px){
-	.menu-toggle{
-		display: none;
-	}
-	
-
-}*/
 @media screen and (max-width: 767px){
 	header{
 		height: 60px;
@@ -242,6 +220,7 @@ header{
 		transition: 0.4s ease-in-out;
 		cursor: pointer;
 		z-index: 99;
+		
   }
   .menu2.active{
     background: #EED069;
@@ -252,10 +231,13 @@ header{
     top:60px;
 		background:#EED069;
 		border: 1px solid #EED069;
-    width:120px;
+    width: 300px;
     opacity: 0;
     max-height: 0;
-    overflow: hidden;
+		overflow: hidden;
+		text-align: center;
+		
+
   }
   .menu2.active ul{
     opacity: 1;
@@ -266,6 +248,8 @@ header{
 		padding:10px 12px;
 		text-decoration: none;
 		font-weight: 900;
+		border-bottom: 1px solid #354751;
+		color: #354751;
     
   }
   .menu2 ul li a:hover{

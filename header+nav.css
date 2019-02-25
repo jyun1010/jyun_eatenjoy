@@ -232,16 +232,16 @@ header{
   }
 .menu2{
     position: absolute;
-	top: 0;
-	right: 0;
-	width: 45px;
-	height: 45px;
-	display: inline-block;
-	padding: 8px;
-	padding-top: 7px;
-	transition: 0.4s ease-in-out;
-	cursor: pointer;
-	z-index: 99;
+		top: 0;
+		right: 0;
+		width: 45px;
+		height: 45px;
+		display: inline-block;
+		padding: 8px;
+		padding-top: 7px;
+		transition: 0.4s ease-in-out;
+		cursor: pointer;
+		z-index: 99;
   }
   .menu2.active{
     background: #EED069;
@@ -250,8 +250,8 @@ header{
     position: absolute;
     right:0;
     top:60px;
-	background:#EED069;
-	border: 1px solid #EED069;
+		background:#EED069;
+		border: 1px solid #EED069;
     width:120px;
     opacity: 0;
     max-height: 0;
@@ -263,14 +263,14 @@ header{
   }
   .menu2 ul li a{
     display: block;
-	padding:10px 12px;
-	text-decoration: none;
-	font-weight: 900;
+		padding:10px 12px;
+		text-decoration: none;
+		font-weight: 900;
     
   }
   .menu2 ul li a:hover{
-	background: #354751;
-	color: #efefef;
+		background: #354751;
+		color: #efefef;
   }
   ul,li{
     list-style: none;

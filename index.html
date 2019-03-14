@@ -211,7 +211,7 @@
   
 
     <script>
-
+        // to_top按鈕滑到頁面最上方
         $("#to_top").click(function(){
         
         $("body, html").animate({
@@ -219,7 +219,7 @@
         },800)    //要做動畫不能用window，要選擇body,html  且JQ要換成jQuery 3.x的 minified 這支
       })
 
-
+    //   to_top按鈕何時出現
       $(window).scroll(function(){
             if($(this).scrollTop() >1){
                 $("#to_top").fadeIn(); 
@@ -228,9 +228,10 @@
             }
         }); 
 
+
+    // 主頁JQ外掛全景slider
     $(".main").vegas({
         delay:2500,
-        
         slides: [
             
             { src: "images/首頁圖/一桌菜5.jpg" },
@@ -244,6 +245,7 @@
         overlay: 'Vegas_slider/overlays/07.png'
     });
     </script>
+    <!-- AOS外掛 -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -253,6 +255,7 @@
 
 
   <script>
+    //   下拉選單開關變化
       $(".menu2").click(function(){
         $(this).toggleClass('active');
       });
